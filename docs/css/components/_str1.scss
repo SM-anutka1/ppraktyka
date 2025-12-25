@@ -1,0 +1,349 @@
+.block_banner{
+  margin-top: -80px;
+}
+.banner_img{
+  width: 100%;
+  height: 628px;
+  margin-top: 143px;
+}
+.banner_zagol{
+  color: white;
+  font-size: 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: -500px;
+  margin-left: 100px;
+}
+.banner_tetx{
+  color: white;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-left: 100px;
+}
+.preim_text{
+  font-size: 77px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 120px;
+}
+.kyb_text{
+  margin-top: 58px;
+  display: flex;
+  font-size: 36px;
+  gap: 99px;
+  color: #003399;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.kyb1_text1{
+
+  //margin-left: 100px;
+}
+.kyb1_text2{
+
+  //margin-left: -212px;
+}
+.kyb1_text3{
+  //margin-left: -210px;
+}
+.kyb1_text4{
+  //margin-left: -150px;
+}
+.blue_block{
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 83px;
+  margin-top: 164px;
+}
+.block_min{
+  display: flex;
+  gap: 22px;
+  margin-left: 200px;
+}
+.card_min{
+  width: 757px;
+  height: 307px;
+  border: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 500px;
+}
+.card_min_img{
+  padding-left: 198px;
+  margin-top: 41px;
+}
+.card_min_text{
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: 52px;
+}
+.card_min1{
+  width: 757px;
+  height: 307px;
+  border: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 500px;
+}
+.card_min_img1{
+  padding-left: 274px;
+  margin-top: 20px;
+}
+.card_min_text1{
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: 52px;
+}
+.cartochki{
+  display: flex;
+  gap: 22px;
+  margin-left: 200px;
+  margin-top: -150px;
+}
+.popul_zagolovok{
+  font-size: 48px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 164px;
+}
+.popul_zagolovok:hover{
+  font-size: 24px;
+
+}
+.popul_cards{
+  display: flex;
+  gap: 74px;
+  margin-left: 213px;
+  margin-top: 93px;
+}
+.popul_cards2{
+  display: flex;
+  gap: 74px;
+  margin-top: 93px;
+  margin-left: 214px;
+}
+.block_chempionat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1720px;
+  min-height: 600px;
+  margin: 50px auto;
+  padding: 40px 60px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  gap: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.chem_content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.chem_zagol {
+  font-size: 40px;
+  color: #3D3D3D;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.chem_text {
+  font-size: 32px;
+  color: #424242;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+@media(max-width: 768px){
+  .block_banner{
+    margin-top: -80px;
+  }
+  .banner_img{
+    width: 768px;
+    height: 628px;
+    margin-top: 143px;
+  }
+  .banner_zagol{
+    color: white;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: -500px;
+    margin-left: 50px;
+  }
+  .banner_tetx{
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 50px;
+  }
+  .preim_text{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 270px;
+  }
+  .kyb_text{
+    margin-top: 58px;
+    display: flex;
+    font-size: 36px;
+    //gap: 99px;
+    color: #003399;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  .kyb1_text1{
+
+    //margin-left: 100px;
+  }
+  .kyb1_text2{
+
+    //margin-left: -212px;
+  }
+  .kyb1_text3{
+    //margin-left: -210px;
+  }
+  .kyb1_text4{
+    //margin-left: -150px;
+  }
+  .blue_block{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 83px;
+    margin-top: 164px;
+  }
+  .block_min{
+    display: flex;
+    gap: 22px;
+    margin-left: 200px;
+  }
+  .card_min{
+    width: 757px;
+    height: 307px;
+    border: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 500px;
+  }
+  .card_min_img{
+    padding-left: 198px;
+    margin-top: 41px;
+  }
+  .card_min_text{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 52px;
+  }
+  .card_min1{
+    width: 757px;
+    height: 307px;
+    border: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 500px;
+  }
+  .card_min_img1{
+    padding-left: 274px;
+    margin-top: 20px;
+  }
+  .card_min_text1{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 52px;
+  }
+  .cartochki{
+    display: flex;
+    gap: 22px;
+    margin-left: 200px;
+    margin-top: -150px;
+  }
+  .popul_zagolovok{
+    font-size: 48px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 164px;
+  }
+  .popul_zagolovok:hover{
+    font-size: 24px;
+
+  }
+  .popul_cards{
+    display: flex;
+    gap: 74px;
+    margin-left: 213px;
+    margin-top: 93px;
+  }
+  .popul_cards2{
+    display: flex;
+    gap: 74px;
+    margin-top: 93px;
+    margin-left: 214px;
+  }
+  .block_chempionat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1720px;
+    min-height: 600px;
+    margin: 50px auto;
+    padding: 40px 60px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    gap: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .chem_content {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .chem_zagol {
+    font-size: 40px;
+    color: #3D3D3D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+  }
+
+  .chem_text {
+    font-size: 32px;
+    color: #424242;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+
+

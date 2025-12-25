@@ -1,0 +1,78 @@
+.cat_text_zagol {
+  text-align: center;
+
+  p {
+    font-size: 64px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+}
+.catalog_header {
+  text-align: center;
+  padding: 60px 0 40px;
+
+  .catalog_title {
+    font-size: 44px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.catalog_container {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 195px;
+  margin-top: 85px;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-top: 95px;
+}
+
+.num1, .num2, .num5 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.num1:hover, .num2:hover, .num5:hover {
+  background-color: #989898;
+}
+
+.num1 p, .num2 p, .num5 p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.points {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.kryg {
+  width: 7px;
+  height: 7px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  margin-top: 20px;
+}

@@ -1,0 +1,295 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  position: absolute;
+  left: 100px; /* ← ИЗМЕНИЛ С right: 20px НА left: 100px */
+  top: 40px;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #363636;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+/* Мобильное меню (скрыто на десктопе) */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: left 0.3s ease;
+  padding: 80px 20px 20px;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 15px 0;
+  font-size: 20px;
+  color: #363636;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.mobile-search input {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Оверлей для затемнения фона */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.navigation {
+  font-size: 24px;
+  display: flex;
+  gap: 60px;
+  margin-left: 658px;
+  margin-top: -75px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  a {
+    color: #363636;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.logo_text {
+  font-size: 40px;
+  margin-top: -3px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.logo_icon {
+  margin-top: 33px;
+}
+
+.search-input {
+  border-radius: 10px;
+  font-size: 20px;
+  color: #B5B5B5;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .navigation,
+  .search-container,
+  .nav2 {
+    display: none !important;
+  }
+
+  .logo {
+    margin-left: 150px; /* ← УВЕЛИЧИЛ С 100px НА 150px (чтобы лого было правее бургера) */
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .logo_icon {
+    margin-top: 0;
+  }
+
+  .logo_icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo_text {
+    font-size: 28px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .burger {
+    display: flex;
+    left: 100px; /* ← ДОБАВИЛ ТУТ ТОЖЕ */
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .header__inner {
+    position: relative;
+    min-height: 80px;
+    align-items: center;
+  }
+
+  .search-input {
+    position: static;
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .burger,
+  .mobile-menu,
+  .menu-overlay {
+    display: none !important;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 60px;
+    margin-left: 658px;
+    margin-top: -75px;
+  }
+
+  .search-input {
+    width: 415px;
+    height: 48px;
+    margin-left: 1350px;
+    position: absolute;
+    margin-top: -60px;
+  }
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 480px) {
+  .burger {
+    left: 50px; /* ← МЕНЬШЕ НА ТЕЛЕФОНАХ */
+    top: 35px;
+  }
+
+  .logo {
+    margin-left: 90px; /* ← ТОЖЕ МЕНЬШЕ */
+  }
+
+  .logo_text {
+    font-size: 22px;
+  }
+
+  .logo_icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mobile-menu {
+    width: 250px;
+  }
+
+  .mobile-nav a {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .burger {
+    left: 30px; /* ← ЕЩЕ МЕНЬШЕ */
+    top: 35px;
+  }
+
+  .logo {
+    margin-left: 70px; /* ← ТОЖЕ МЕНЬШЕ */
+  }
+
+  .logo_text {
+    font-size: 20px;
+  }
+
+  .logo_icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-menu {
+    width: 220px;
+  }
+}
+
+/* ДОПОЛНИТЕЛЬНО: адаптация для планшетов */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .navigation {
+    margin-left: 450px;
+    gap: 40px;
+    font-size: 22px;
+  }
+
+  .search-input {
+    margin-left: 1000px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navigation {
+    margin-left: 350px;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .search-input {
+    margin-left: 800px;
+    width: 300px;
+  }
+}
