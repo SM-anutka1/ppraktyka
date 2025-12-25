@@ -1,3 +1,23 @@
+/* ОСНОВНЫЕ СТИЛИ (десктоп) */
+.kib_preim {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 115px 86px;
+  padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.kib_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 281px;
+  text-align: center;
+}
+
 .kyb {
   width: 281px;
   height: 281px;
@@ -9,7 +29,6 @@
   justify-content: center;
   transition: all 0.3s ease;
   flex-shrink: 0;
-  margin: 0 auto; /* Центрируем квадрат */
 }
 
 .kyb_icon {
@@ -39,15 +58,6 @@
   filter: brightness(0) invert(1);
 }
 
-.kib_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Отступ между квадратом и текстом */
-  width: 281px;
-  text-align: center;
-}
-
 .kib_text {
   font-size: 32px;
   color: #003399;
@@ -55,23 +65,72 @@
   text-align: center;
   line-height: 1.3;
   width: 100%;
-  margin: 0;
-  padding: 0 10px;
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ===== КОНТЕЙНЕР ДЛЯ ВСЕХ КАРТОЧЕК ===== */
-.kib_preim {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 86px 90px; /* Вертикальный и горизонтальный отступ */
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 1400px;
+/* АДАПТИВ ДЛЯ 768px (планшет) */
+@media (max-width: 768px) {
+  .kib_preim {
+    gap: 40px 30px; /* Уменьшаем отступы между карточками */
+    padding: 20px 50px; /* Отступы слева и справа по 50px */
+    justify-content: flex-start; /* Карточки начинаются слева */
+    margin: 0 auto;
+    max-width: 768px;
+    margin-left: 50px;
+  }
+
+  .kib_item {
+    width: calc(50% - 15px); /* 2 карточки в ряд, учитывая gap */
+    max-width: 250px;
+    flex: 0 0 auto; /* Не растягиваются, не сжимаются */
+  }
+
+  .kyb {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .kyb svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .kib_text {
+    font-size: 20px;
+    min-height: 50px;
+    padding: 0 5px;
+  }
 }
 
-git init
+/* АДАПТИВ ДЛЯ 480px (мобильные) */
+@media (max-width: 480px) {
+  .kib_preim {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .kib_item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .kyb {
+    width: 200px;
+    height: 200px;
+  }
+
+  .kyb svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .kib_text {
+    font-size: 22px;
+  }
+}

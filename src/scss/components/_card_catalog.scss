@@ -82,3 +82,144 @@
 .kart:hover .kart_text {
   opacity: 0.2;
 }
+
+@media (max-width: 768px) {
+  /* 1. РОДИТЕЛЬ: Сбрасываем всё и центрируем */
+  .catalog_grid,
+  .container_kart,
+  [class*="catalog"] {
+    display: flex !important;
+    flex-direction: column !important; /* Строго в столбик */
+    align-items: center !important; /* Центровка карточек */
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+    gap: 30px !important; /* Расстояние между карточками */
+  }
+
+  /* 2. КАРТОЧКА: делаем её УЖЕ */
+  .kart {
+    /* Ограничиваем ширину, чтобы она не была на весь экран */
+    width: 85% !important;
+    max-width: 280px !important; /* Оптимальная ширина для аккуратного вида */
+
+    /* Магия центровки */
+    margin: 0 auto !important;
+
+    height: auto !important;
+    min-height: 350px !important;
+    padding: 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important; /* Легкая тень для объема */
+  }
+
+  /* 3. КАРТИНКА: подгоняем под узкую карточку */
+  .kart_img img {
+    max-width: 180px !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 4. ТЕКСТ */
+  .kart_text {
+    font-size: 16px !important; /* Чуть меньше шрифт, чтобы выглядело гармонично */
+    text-align: center !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 5. КНОПКА */
+  .btn_kart {
+    width: 160px !important; /* Компактная кнопка */
+    height: 40px !important;
+    font-size: 16px !important;
+    margin-top: auto !important; /* Прижать к низу */
+  }
+}
+
+@media (max-width: 480px) {
+  /* 1. СБРОС ВСЕХ КОНТЕЙНЕРОВ: убираем всё, что толкает вправо или влево */
+  html, body {
+    overflow-x: hidden !important; /* Убираем горизонтальную прокрутку */
+  }
+
+  .container,
+  .wrapper,
+  main,
+  .block_str,
+  .catalog_grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex !important;
+    flex-direction: column !important; /* Строго столбик */
+    align-items: center !important; /* Центровка контента */
+    justify-content: center !important;
+    transform: none !important;
+  }
+
+  /* 2. ОТСТУП ОТ ЗАГОЛОВКА */
+  .block_str {
+    margin-top: 50px !important;
+    gap: 30px !important; /* Расстояние между карточками в столбике */
+  }
+
+  /* 3. КАРТОЧКА: теперь она будет ровно по центру */
+  .kart {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    /* Делаем её аккуратного размера */
+    width: 260px !important;
+    min-width: 260px !important;
+    height: auto !important;
+    min-height: 380px !important;
+
+    /* Магия центровки */
+    margin: 0 auto !important;
+
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+
+  /* 4. ВНУТРЯНКА */
+  .kart_img {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .kart_img img {
+    max-width: 180px !important;
+    height: auto !important;
+  }
+
+  .kart_text {
+    text-align: center !important;
+    font-size: 15px !important;
+    margin-top: 15px !important;
+  }
+
+  .btn_kart {
+    width: 160px !important;
+    height: 40px !important;
+    margin: 20px auto 0 !important;
+  }
+}
+
+/* Для совсем маленьких экранов чуть уменьшим ширину самой карточки */
+@media (max-width: 390px) {
+  .kart {
+    width: 230px !important;
+    min-width: 230px !important;
+  }
+}
+

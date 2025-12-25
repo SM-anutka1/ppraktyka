@@ -1,12 +1,14 @@
-.block_banner{
+.block_banner {
   margin-top: -80px;
 }
-.banner_img{
+
+.banner_img {
   width: 100%;
   height: 628px;
   margin-top: 143px;
 }
-.banner_zagol{
+
+.banner_zagol {
   color: white;
   font-size: 65px;
   font-family: 'Montserrat', sans-serif;
@@ -14,21 +16,24 @@
   margin-top: -500px;
   margin-left: 100px;
 }
-.banner_tetx{
+
+.banner_tetx {
   color: white;
   font-size: 36px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   margin-left: 100px;
 }
-.preim_text{
+
+.preim_text {
   font-size: 77px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: center;
   margin-top: 120px;
 }
-.kyb_text{
+
+.kyb_text {
   margin-top: 58px;
   display: flex;
   font-size: 36px;
@@ -37,116 +42,109 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
-.kyb1_text1{
 
-  //margin-left: 100px;
-}
-.kyb1_text2{
-
-  //margin-left: -212px;
-}
-.kyb1_text3{
-  //margin-left: -210px;
-}
-.kyb1_text4{
-  //margin-left: -150px;
-}
-.blue_block{
+.blue_block {
   display: flex;
   margin-left: 100px;
   margin-right: 100px;
   gap: 83px;
   margin-top: 164px;
 }
-.block_min{
+
+.block_min {
   display: flex;
   gap: 22px;
   margin-left: 200px;
 }
-.card_min{
-  width: 757px;
-  height: 307px;
-  border: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-top: 500px;
-}
-.card_min_img{
-  padding-left: 198px;
-  margin-top: 41px;
-}
-.card_min_text{
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  margin-top: 52px;
-}
-.card_min1{
-  width: 757px;
-  height: 307px;
-  border: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-top: 500px;
-}
-.card_min_img1{
-  padding-left: 274px;
-  margin-top: 20px;
-}
-.card_min_text1{
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  margin-top: 52px;
-}
-.cartochki{
+/* СТИЛИ ДЛЯ КАРТОЧЕК С КАРТИНКАМИ НА 1920PX */
+.cartochki {
   display: flex;
-  gap: 22px;
-  margin-left: 200px;
-  margin-top: -150px;
+  justify-content: center;
+  gap: 40px;
+  margin: 100px auto;
+  max-width: 1720px;
+  padding: 0 50px;
 }
-.popul_zagolovok{
-  font-size: 48px;
+
+.card_min,
+.card_min2 {
+  width: 757px;
+  height: 307px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.min_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0;
+  margin-left: 200px;
+}
+.min_img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0;
+  margin-left: 270px;
+}
+
+.min_text,
+.min_text2 {
+  font-size: 24px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 0 50px;
+  line-height: 1.3;
+}
+
+.popul_zagolovok {
+  font-size: 64px;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: center;
   margin-top: 164px;
-}
-.popul_zagolovok:hover{
-  font-size: 24px;
 
 }
-.popul_cards{
+
+.popul_cards {
   display: flex;
   gap: 74px;
   margin-left: 213px;
   margin-top: 93px;
 }
-.popul_cards2{
+
+.popul_cards2 {
   display: flex;
   gap: 74px;
   margin-top: 93px;
   margin-left: 214px;
 }
+
 .block_chempionat {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
-  max-width: 1720px;
+  max-width: 1920px;
   min-height: 600px;
-  margin: 50px auto;
-  padding: 40px 60px;
+  //margin: 50px auto;
+  //padding: 40px 60px;
   border: 1px solid #000;
   border-radius: 10px;
   gap: 40px;
-  box-sizing: border-box;
-  overflow: hidden;
+  margin-left: 200px;
 }
 
 .chem_content {
@@ -170,143 +168,339 @@
   margin: 0;
 }
 
+/* АДАПТАЦИЯ НА 390PX */
+@media (max-width: 390px) {
+  .banner_img {
+    height: 250px;
+    margin-top: 60px;
+  }
 
-@media(max-width: 768px){
-  .block_banner{
+  .banner_zagol {
+    font-size: 28px;
+    margin-top: -180px;
+    margin-left: 15px;
+  }
+
+  .banner_tetx {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .preim_text {
+    font-size: 32px;
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+
+  .kyb_text {
+    font-size: 18px;
+    gap: 20px;
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+
+  .blue_block {
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 25px;
+    margin-top: 50px;
+  }
+
+  .block_min {
+    margin-left: 15px;
+    gap: 15px;
+  }
+
+  .card_min,
+  .card_min1 {
+    height: 160px;
+    max-width: 300px;
+  }
+
+  .card_min_img img,
+  .card_min_img1 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card_min_text,
+  .card_min_text1 {
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .cartochki {
+    margin-left: 15px;
+    gap: 15px;
+  }
+
+  .popul_zagolovok {
+    font-size: 28px;
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .popul_cards,
+  .popul_cards2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 20px;
+  }
+
+  .block_chempionat {
+    width: 85%;
+    margin: 25px auto;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .chem_zagol {
+    font-size: 22px;
+  }
+
+  .chem_text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+/* АДАПТАЦИЯ НА 480PX */
+@media (max-width: 480px) {
+  .block_banner {
+    margin-top: 0;
+  }
+
+  .banner_img {
+    height: 300px;
+    margin-top: 80px;
+  }
+
+  .banner_zagol {
+    font-size: 32px;
+    margin-top: -200px;
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
+  .banner_tetx {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 90%;
+  }
+
+  .preim_text {
+    font-size: 28px;
+    margin-top: 280px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .kyb_text {
+    font-size: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .blue_block {
+    flex-direction: column;
+    margin-left: 130px;
+    margin-right: 20px;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .block_min {
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+  }
+
+  .card_min,
+  .card_min2 {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+
+
+  .min_img,
+  .min_img2{
+    width: 300px;
+    height: 80px;
+  }
+
+  .min_text,
+  .min_text2 {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+
+  .cartochki {
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .popul_zagolovok {
+    font-size: 12px;
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+
+  .popul_cards,
+  .popul_cards2 {
+    //flex-direction: column;
+    //margin-left: -20px;
+    //margin-right: 20px;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .block_chempionat {
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .chem_zagol {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .chem_text {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 768px) {
+  .block_banner {
     margin-top: -80px;
   }
-  .banner_img{
-    width: 768px;
+  .banner_img {
+    width: 100%;
     height: 628px;
     margin-top: 143px;
   }
-  .banner_zagol{
+  .banner_zagol {
     color: white;
-    font-size: 28px;
+    font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: -500px;
     margin-left: 50px;
   }
-  .banner_tetx{
+  .banner_tetx {
     color: white;
-    font-size: 22px;
+    font-size: 32px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-left: 50px;
   }
-  .preim_text{
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 270px;
-  }
-  .kyb_text{
-    margin-top: 58px;
-    display: flex;
-    font-size: 36px;
-    //gap: 99px;
-    color: #003399;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-  }
-  .kyb1_text1{
-
-    //margin-left: 100px;
-  }
-  .kyb1_text2{
-
-    //margin-left: -212px;
-  }
-  .kyb1_text3{
-    //margin-left: -210px;
-  }
-  .kyb1_text4{
-    //margin-left: -150px;
-  }
-  .blue_block{
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 83px;
-    margin-top: 164px;
-  }
-  .block_min{
-    display: flex;
-    gap: 22px;
-    margin-left: 200px;
-  }
-  .card_min{
-    width: 757px;
-    height: 307px;
-    border: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 500px;
-  }
-  .card_min_img{
-    padding-left: 198px;
-    margin-top: 41px;
-  }
-  .card_min_text{
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 52px;
-  }
-  .card_min1{
-    width: 757px;
-    height: 307px;
-    border: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 500px;
-  }
-  .card_min_img1{
-    padding-left: 274px;
-    margin-top: 20px;
-  }
-  .card_min_text1{
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 52px;
-  }
-  .cartochki{
-    display: flex;
-    gap: 22px;
-    margin-left: 200px;
-    margin-top: -150px;
-  }
-  .popul_zagolovok{
+  .preim_text {
     font-size: 48px;
-    color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    text-align: center;
-    margin-top: 164px;
+    margin-top: 270px;
+    //margin-left: 50px;
+    white-space: nowrap;
   }
-  .popul_zagolovok:hover{
+  .blue_block {
+    margin-left: 50px;
+    gap: 16px;
+    margin-top: 102px;
+    width: calc(50% - 15px); /* 2 карточки в ряд, учитывая gap */
+    max-width: 250px;
+    flex: 0 0 auto; /* Не растягиваются, не сжимаются */
+  }
+  .block_min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+    .cartochki {
+      flex-direction: row; /* Две карточки в ряд */
+      gap: 20px;
+      margin: 50px auto;
+      padding: 0 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card_min,
+    .card_min2 {
+      width: 300px;
+      height: 300px;
+    }
+
+    .min_img {
+      margin-left: 0; /* Убираем сдвиг */
+      margin-top: 20px;
+      width: 250px;
+      height: 70px;
+      margin-left: 10px;
+    }
+    .min_img2 {
+      margin-left: 0; /* Убираем сдвиг */
+      margin-top: 20px;
+      width: 120px;
+      height: 70px;
+      margin-left: 80px;
+    }
+
+    .min_text,
+    .min_text2 {
+      font-size: 16px;
+      padding: 0 15px;
+      margin-top: 15px;
+    }
+  }
+  .popul_zagolovok {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 150px;
+    //margin-left: 557px;
+    white-space: nowrap;
+  }
+
+  .popul_zagolovok:hover {
     font-size: 24px;
 
   }
-  .popul_cards{
+
+  .popul_cards {
     display: flex;
     gap: 74px;
     margin-left: 213px;
     margin-top: 93px;
   }
-  .popul_cards2{
+
+  .popul_cards2 {
     display: flex;
     gap: 74px;
     margin-top: 93px;
     margin-left: 214px;
   }
+
   .block_chempionat {
     display: flex;
     justify-content: space-between;
@@ -321,6 +515,7 @@
     gap: 40px;
     box-sizing: border-box;
     overflow: hidden;
+    margin-left: 10px;
   }
 
   .chem_content {
@@ -333,7 +528,7 @@
     color: #3D3D3D;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin: 0 0 30px 0;
+    text-align: left;
   }
 
   .chem_text {
@@ -342,8 +537,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0;
+    text-align: left;
   }
-}
+
 
 
 

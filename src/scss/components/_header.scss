@@ -139,7 +139,7 @@
   .logo {
     margin-left: 150px; /* ← УВЕЛИЧИЛ С 100px НА 150px (чтобы лого было правее бургера) */
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
   }
 
@@ -154,7 +154,7 @@
 
   .logo_text {
     font-size: 28px;
-    margin-top: 0;
+    margin-top: -18px;
     margin-left: 10px;
   }
 
@@ -216,12 +216,12 @@
 
 @media (max-width: 480px) {
   .burger {
-    left: 50px; /* ← МЕНЬШЕ НА ТЕЛЕФОНАХ */
+    left: 20px; /* ← МЕНЬШЕ НА ТЕЛЕФОНАХ */
     top: 35px;
   }
 
   .logo {
-    margin-left: 90px; /* ← ТОЖЕ МЕНЬШЕ */
+    margin-left: 120px; /* ← ТОЖЕ МЕНЬШЕ */
   }
 
   .logo_text {

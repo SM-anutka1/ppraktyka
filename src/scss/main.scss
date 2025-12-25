@@ -10,21 +10,17 @@
 @use 'layout/container';
 
 // ==== 4. Components ====
-//@use 'components/card';
 @use 'components/header';
 @use 'components/str1';
 @use 'components/button1';
 @use 'components/preim_kybik';
 @use 'components/blue_kyb';
-@use 'components/card_minchif';
 @use 'components/card_popul';
 @use 'components/photo';
 @use 'components/form';
 @use 'components/footer';
 @use 'components/card_catalog';
 @use 'components/str2';
-
-
 
 /* Подключение всех нужных начертаний Montserrat */
 @font-face {
@@ -74,6 +70,7 @@
   font-style: italic;
   font-display: swap;
 }
+
 /* Утилитарные классы для шрифтов */
 .font-regular {
   font-weight: 400;
@@ -104,3 +101,4 @@
   font-style: italic;
   font-weight: 700;
 }
+

@@ -76,3 +76,19 @@
   border-radius: 50%;
   margin-top: 20px;
 }
+
+@media (max-width: 768px){
+  .catalog_header{
+    margin-left: 100px;
+  }
+
+}
+@media (max-width: 480px){
+  .block_str{
+    margin-left: -30px;
+    gap: 20px;
+  }
+  .catalog_header{
+    margin-left: -0px;
+  }
+}
