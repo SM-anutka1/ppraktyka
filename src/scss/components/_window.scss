@@ -1,0 +1,86 @@
+/* Сам компонент */
+window {
+  display: none; /* Скрыто по умолчанию, пока JS не включит block */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Идеально по центру экрана */
+
+  width: 90%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.6), 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Заголовок в окне */
+window h2 {
+  margin-top: 0;
+  color: #003fa3; /* Твой синий */
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Текст */
+window p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Форма внутри */
+.window-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.window-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.window-form input:focus {
+  border-color: #003fa3;
+}
+
+/* Кнопка */
+.window-form button {
+  background: #003fa3;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.window-form button:hover {
+  background: #002d75;
+}
+
+/* Кнопка закрытия (крестик) */
+.close-window {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-window:hover {
+  color: #000;
+}

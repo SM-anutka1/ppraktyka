@@ -21,6 +21,8 @@
 @use 'components/footer';
 @use 'components/card_catalog';
 @use 'components/str2';
+@use 'components/window';
+
 
 /* Подключение всех нужных начертаний Montserrat */
 @font-face {

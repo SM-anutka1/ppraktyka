@@ -186,5 +186,43 @@
 @@include('../components/_form.html')
 @@include('../components/_footer.html')
 
+<div id="myModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Оставьте заявку</h2>
+        <p>Заполните форму, и мы свяжемся с вами!</p>
+        <form id="modalForm">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <button type="submit" class="btn-submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+@@include('../components/_window.html')
+<script>
+    // Код запускается после загрузки страницы
+    window.addEventListener('load', () => {
+        console.log("Скрипт запущен, ждем 10 секунд...");
+
+        setTimeout(() => {
+            const promoModal = document.getElementById('promoModal');
+
+            if (promoModal) {
+                promoModal.style.display = 'block';
+            } else {
+                console.error("Окно не найдено! Проверь, что в _window.html есть id='promoModal'");
+            }
+        }, 10000); // 10000 миллисекунд = 10 секунд
+
+        // Логика закрытия
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('close-window')) {
+                document.getElementById('promoModal').style.display = 'none';
+            }
+        });
+    });
+</script>
 </body>
 </html>
