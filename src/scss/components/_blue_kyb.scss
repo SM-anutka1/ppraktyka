@@ -1,4 +1,3 @@
-/* СТИЛИ ДЛЯ 1920PX (ДЕСКТОП) */
 .blue {
   width: 367px;
   height: 257px;
@@ -46,13 +45,12 @@
   transform: translateY(-20px);
 }
 
-/* АДАПТАЦИЯ НА 768PX - НОВЫЙ КОД */
 @media (max-width: 768px) {
   .blue-container {
     padding: 20px 50px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; /* В ряд */
+    flex-direction: row;
     gap: 15px;
     justify-content: flex-start;
     margin-left: 0;

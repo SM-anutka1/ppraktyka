@@ -10,7 +10,7 @@
   padding: 0;
   z-index: 1001;
   position: absolute;
-  left: 100px; /* ← ИЗМЕНИЛ С right: 20px НА left: 100px */
+  left: 100px;
   top: 40px;
 }
 
@@ -23,7 +23,6 @@
   border-radius: 3px;
 }
 
-/* Мобильное меню (скрыто на десктопе) */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -71,7 +70,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Оверлей для затемнения фона */
 .menu-overlay {
   display: none;
   position: fixed;
@@ -137,7 +135,7 @@
   }
 
   .logo {
-    margin-left: 150px; /* ← УВЕЛИЧИЛ С 100px НА 150px (чтобы лого было правее бургера) */
+    margin-left: 150px;
     width: 100%;
     margin-top: 20px;
     position: relative;
@@ -160,7 +158,7 @@
 
   .burger {
     display: flex;
-    left: 100px; /* ← ДОБАВИЛ ТУТ ТОЖЕ */
+    left: 100px;
   }
 
   .mobile-menu {
@@ -216,12 +214,12 @@
 
 @media (max-width: 480px) {
   .burger {
-    left: 20px; /* ← МЕНЬШЕ НА ТЕЛЕФОНАХ */
+    left: 20px;
     top: 35px;
   }
 
   .logo {
-    margin-left: 120px; /* ← ТОЖЕ МЕНЬШЕ */
+    margin-left: 120px;
   }
 
   .logo_text {
@@ -245,12 +243,12 @@
 
 @media (max-width: 360px) {
   .burger {
-    left: 30px; /* ← ЕЩЕ МЕНЬШЕ */
+    left: 30px;
     top: 35px;
   }
 
   .logo {
-    margin-left: 70px; /* ← ТОЖЕ МЕНЬШЕ */
+    margin-left: 70px;
   }
 
   .logo_text {
@@ -267,7 +265,6 @@
   }
 }
 
-/* ДОПОЛНИТЕЛЬНО: адаптация для планшетов */
 @media (min-width: 769px) and (max-width: 1200px) {
   .navigation {
     margin-left: 450px;

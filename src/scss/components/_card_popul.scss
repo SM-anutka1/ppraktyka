@@ -56,7 +56,6 @@
   color: white;
   transform: translateY(-5px);
 }
-/* АДАПТАЦИЯ НА 480PX */
 @media (max-width: 480px) {
   .cardpop {
     width: 180px;
@@ -88,7 +87,6 @@
   }
 }
 
-/* АДАПТАЦИЯ НА 390PX */
 @media (max-width: 390px) {
   .cardpop {
     width: 160px;
@@ -108,45 +106,38 @@
     font-size: 11px;
   }
 }
-/* АДАПТАЦИЯ НА 768PX */
 @media (max-width: 768px) {
-  /* Родительский контейнер для карточек */
   .popul_cards, .popul_cards2 {
-    margin-left: 100px; /* Отступ слева 50px */
+    margin-left: 100px;
     display: flex;
-    flex-wrap: wrap; /* Разрешаем перенос */
-    flex-direction: row; /* В ряд */
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 15px;
     width: calc(100% - 50px);
   }
 
-  /* Сама карточка */
   .cardpop {
-    width: 250px; /* Уменьшаем еще сильнее для 2 в ряд */
+    width: 250px;
     height: 220px;
   }
 
-  /* Иконка - УМЕНЬШАЕМ */
   .popul_icon {
     padding-top: 15px;
     padding-left: 15px;
     font-size: 20px;
   }
 
-  /* Если иконка SVG */
   .popul_icon svg {
     width: 35px;
     height: 35px;
   }
 
-  /* Заголовок - УМЕНЬШАЕМ */
   .popul_zagol {
     font-size: 20px;
     margin-left: 15px;
     padding-top: 8px;
   }
 
-  /* Текст - УМЕНЬШАЕМ */
   .popul_text {
     font-size: 14px;
     margin-top: 10px;

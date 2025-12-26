@@ -109,14 +109,14 @@
     padding: 0 20px;
     gap: 25px;
     text-align: center;
-    align-items: center; /* Центрируем все колонки */
+    align-items: center;
   }
 
   .foot_column {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрируем содержимое колонок */
+    align-items: center;
   }
 
   .foot_title {
@@ -139,15 +139,14 @@
 
   .logo_foot {
     margin-bottom: 20px;
-    justify-content: center; /* Центрируем логотип и текст */
+    justify-content: center;
   }
 
   .icon_foot {
-    justify-content: center; /* Центрируем иконки */
+    justify-content: center;
   }
 }
 
-/* АДАПТАЦИЯ НА 480PX */
 @media (max-width: 480px) {
   .footer {
     padding: 25px 0;
@@ -177,7 +176,6 @@
   }
 }
 
-/* АДАПТАЦИЯ НА 390PX */
 @media (max-width: 390px) {
   .footer {
     padding: 20px 0;
